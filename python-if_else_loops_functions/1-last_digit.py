@@ -5,7 +5,7 @@ witness = 0
 if number < 0:
     number *= -1
     witness = 1
-if number % 10 < 6:
+if number % 10 < 6 and number != 0:
     if witness:
         print(f"Last digit of -{number} is -{number % 10} and is less than 6 and not 0")
     else:
