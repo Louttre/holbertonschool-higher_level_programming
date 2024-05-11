@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 def uppercase(str):
+    newlett = ""
     for letter in str:
         if ord(letter) <= 122 and ord(letter) >= 97:
-            print((chr(ord(letter) - 32)), end='')
+            newlett += chr(ord(letter) - 32)
         else:
-            print(letter, end='')
+            newlett += letter
+    print(f"{newlett}\n", end ='')
