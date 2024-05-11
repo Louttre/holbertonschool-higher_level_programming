@@ -5,11 +5,10 @@ def pow(a, b):
         return a
     if b == 0:
         return result
-    if b > 0:    
+    if b > 0:
         for i in range(b):
             result *= a
     else:
         for i in range(-b):
             result /= a
     return result
-
