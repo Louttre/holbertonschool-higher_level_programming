@@ -6,4 +6,4 @@ def uppercase(str):
             newlett += chr(ord(letter) - 32)
         else:
             newlett += letter
-    print(f"{newlett}\n", end ='')
+    print(f"{}\n".format(newlett), end ='')
