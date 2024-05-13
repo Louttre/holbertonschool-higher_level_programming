@@ -14,7 +14,7 @@ def roman_to_int(roman_string):
         return res
     for i in range(len(roman_string)):
         if i + 1 == len(roman_string) or roman_to_integer[roman_string[i]] >= roman_to_integer[roman_string[i + 1]]:
-            result += roman_to_integer[roman_string[i]]
+            res += roman_to_integer[roman_string[i]]
         else:
             res -= roman_to_integer[roman_string[i]]
     return res
