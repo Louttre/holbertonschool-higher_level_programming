@@ -10,7 +10,10 @@ roman_to_integer = {
     'M': 1000
 }
 res = 0
+if not roman_string or len(roman_string) == 0:
+    return res
 for letter in roman_string:
     for key, value in roman_to_integer:
         if letter == key:
             res += value
+return res
