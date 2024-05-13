@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    roman_to_integer = {
+    tr = {
         'I': 1,
         'V': 5,
         'X': 10,
@@ -13,8 +13,8 @@ def roman_to_int(roman_string):
     if not isinstance(roman_string, str) or not roman_string:
         return res
     for i in range(len(roman_string)):
-        if i + 1 == len(roman_string) or roman_to_integer[roman_string[i]] >= roman_to_integer[roman_string[i + 1]]:
-            res += roman_to_integer[roman_string[i]]
+        if i + 1 == len(roman_string) or tr[roman_string[i]] >= tr[roman_string[i + 1]]:
+            res += tr[roman_string[i]]
         else:
-            res -= roman_to_integer[roman_string[i]]
+            res -= tr[roman_string[i]]
     return res
