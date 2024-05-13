@@ -4,7 +4,6 @@ def delete_at(my_list=[], idx=0):
         return my_list
     cpy_list = []
     for index, i in enumerate(my_list):
-        if index == idx:
-            continue
-        else:
-            cpy_list.append(my_list[idx])
+        if index != idx:
+            cpy_list.append(i)
+    return cpy_list
