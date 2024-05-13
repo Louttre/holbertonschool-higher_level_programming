@@ -12,8 +12,9 @@ def roman_to_int(roman_string):
     res = 0
     if not roman_string or len(roman_string) == 0:
         return res
-    for letter in roman_string:
-        for key, value in roman_to_integer.items():  # Use items() method to iterate over key-value pairs
-            if letter == key:
-                res += value
+     for i in range(len(roman_string)):
+        if i + 1 == len(roman_string) or roman_to_integer[roman_string[i]] >= roman_to_integer[roman_string[i + 1]]:
+            result += roman_to_integer[roman_string[i]]
+        else:
+            res -= roman_to_integer[roman_string[i]]
     return res
