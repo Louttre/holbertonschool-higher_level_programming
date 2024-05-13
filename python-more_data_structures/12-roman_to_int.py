@@ -12,7 +12,7 @@ def roman_to_int(roman_string):
     res = 0
     if not roman_string or len(roman_string) == 0:
         return res
-     for i in range(len(roman_string)):
+    for i in range(len(roman_string)):
         if i + 1 == len(roman_string) or roman_to_integer[roman_string[i]] >= roman_to_integer[roman_string[i + 1]]:
             result += roman_to_integer[roman_string[i]]
         else:
