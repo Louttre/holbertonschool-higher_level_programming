@@ -14,11 +14,9 @@ def list_division(my_list_1, my_list_2, list_length):
             except ValueError:
                 print("wrong type")
                 result.append(0)
-            except ZeroDivisionError as e:
-                print(e)
+            except ZeroDivisionError:
                 result.append(0)
-            except IndexError as e:
-                print(e)
+            except IndexError:
                 result.append(0)
     finally:
         return result
