@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Define a class Square."""
 
@@ -48,7 +47,7 @@ class Square:
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         self.__size = value
-        
+
     @property
     def position(self):
         return self.__position
@@ -68,8 +67,7 @@ class Square:
                 or not all(coord >= 0 for coord in value):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
-        
-    
+
     def my_print(self):
         """Print the square using hash symbols.
 
@@ -86,4 +84,3 @@ class Square:
         for j in range(self.__size):
             print(" " * self.__position[0], end="")
             print("#" * self.__size)
-    
