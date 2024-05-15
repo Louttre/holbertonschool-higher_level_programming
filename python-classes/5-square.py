@@ -40,7 +40,7 @@ class Square:
 
     def my_print(self):
         """Print the square using hash symbols.
-    
+
         If the size of the square is 0, print an empty line.
         Otherwise, print a square shape using hash symbols.
         """
