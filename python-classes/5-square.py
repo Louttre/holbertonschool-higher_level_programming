@@ -39,6 +39,11 @@ class Square:
         self.__size = value
 
     def my_print(self):
+        """Print the square using hash symbols.
+    
+        If the size of the square is 0, print an empty line.
+        Otherwise, print a square shape using hash symbols.
+        """
         if self.__size == 0:
             print()
         else:
