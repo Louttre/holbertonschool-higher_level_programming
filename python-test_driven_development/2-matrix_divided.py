@@ -3,6 +3,16 @@
 This module provides functions for dividing matrices.
 """
 
+def MustBeAMatrix():
+    """
+    Raises a TypeError with a specific message indicating that the matrix must be a matrix (list of lists) of integers/floats.
+
+    Raises:
+        TypeError: Always raised with the message "matrix must be a matrix (list of lists) of integers/floats".
+    """
+
+    
+    raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
 def matrix_divided(matrix, div):
     """
@@ -24,14 +34,14 @@ def matrix_divided(matrix, div):
 
     
     if not isinstance(matrix, list):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        MustBeAMatrix()
     for row in matrix:
         if not isinstance(row, list):
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            MustBeAMatrix()
     for row in matrix:
         for num in row:
             if not isinstance(num, (int, float)):
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                MustBeAMatrix()
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
     if div == 0:
