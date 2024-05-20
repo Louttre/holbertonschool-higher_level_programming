@@ -13,6 +13,9 @@ Raises:
     TypeError: If either of a or b are not integers or floats.
 """
 def add_integer(a, b=98):
+    """
+    add two ints
+    """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
     if not isinstance(b, (int, float)):
