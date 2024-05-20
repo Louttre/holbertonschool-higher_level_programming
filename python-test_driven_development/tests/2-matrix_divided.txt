@@ -1,0 +1,53 @@
+#!/usr/bin/python3
+
+
+class TestMatrixDivided(unittest.TestCase):
+    """
+    Test cases for the matrix_divided function.
+    """
+    # Import "matrix_divided" from the "matrix_operations" module
+    >>> matrix_divided = __import__('matrix_operations').matrix_divided
+
+    def test_valid_input(self):
+        """
+        Test the function with valid input.
+        """
+        # Test with a valid matrix and divisor
+        >>> matrix_divided([[1, 2], [3, 4]], 2)
+        [[0.5, 1.0], [1.5, 2.0]]
+
+    def test_invalid_matrix_type(self):
+        """
+        Test the function with an invalid matrix type.
+        """
+        # Test with a non-matrix input
+        >>> matrix_divided(123, 2)
+        Traceback (most recent call last):
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    def test_invalid_divisor_type(self):
+        """
+        Test the function with an invalid divisor type.
+        """
+        # Test with a non-number divisor
+        >>> matrix_divided([[1, 2], [3, 4]], '2')
+        Traceback (most recent call last):
+        TypeError: div must be a number
+
+    def test_division_by_zero(self):
+        """
+        Test the function with division by zero.
+        """
+        # Test with divisor equal to zero
+        >>> matrix_divided([[1, 2], [3, 4]], 0)
+        Traceback (most recent call last):
+        ZeroDivisionError: division by zero
+
+    def test_invalid_matrix_row_size(self):
+        """
+        Test the function with invalid matrix row sizes.
+        """
+        # Test with rows of different sizes
+        >>> matrix_divided([[1, 2], [3, 4, 5]], 2)
+        Traceback (most recent call last):
+        TypeError: Each row of the matrix must have the same size
