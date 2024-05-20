@@ -19,7 +19,7 @@ def text_indentation(text):
     for char in text:
         formatted_text += char
         if char in ['.', '?', ':']:
-            formatted_text += "\n"
+            formatted_text += "\n\n"
             print("{}".format(formatted_text.strip()))
             formatted_text = ""
     print("{}".format(formatted_text.strip()))
