@@ -66,7 +66,7 @@ class TestMatrixDivided(unittest.TestCase):
         """
         # Test with missing one argument
         with self.assertRaises(TypeError):
-            >>> matrix_divided([[1, 2], [3, 4]])
+            matrix_divided([[1, 2], [3, 4]])
 
     def test_missing_two_arguments(self):
         """
