@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 
-
 class TestMatrixDivided(unittest.TestCase):
     """
     Test cases for the matrix_divided function.
     """
     # Import "matrix_divided" from the "matrix_operations" module
-    >>> matrix_divided = __import__('matrix_operations').matrix_divided
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
     def test_valid_input(self):
         """
