@@ -1,6 +1,20 @@
 #!/usr/bin/python3
+"""
+Module that print a provided first and last name.
+"""
+
 
 def say_my_name(first_name, last_name=""):
+        """
+    Print the provided first and last name.
+
+    Args:
+        first_name (str): The first name.
+        last_name (str, optional): The last name. Defaults to "".
+
+    Raises:
+        TypeError: If first_name or last_name is not a string.
+    """
     
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
