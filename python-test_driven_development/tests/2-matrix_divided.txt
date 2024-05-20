@@ -50,3 +50,27 @@ class TestMatrixDivided(unittest.TestCase):
         >>> matrix_divided([[1, 2], [3, 4, 5]], 2)
         Traceback (most recent call last):
         TypeError: Each row of the matrix must have the same size
+
+    def test_dividing_matrix_by_float_inf(self):
+        """
+        Test dividing matrix by float('inf') should return all values as 0.0.
+        """
+        # Test dividing matrix by float('inf')
+        result = matrix_divided([[1, 2], [3, 4]], float('inf'))
+        self.assertEqual(result, [[0.0, 0.0], [0.0, 0.0]])
+
+    def test_missing_one_argument(self):
+        """
+        Test when one argument is missing, should raise TypeError.
+        """
+        # Test with missing one argument
+        with self.assertRaises(TypeError):
+            matrix_divided([[1, 2], [3, 4]])
+
+    def test_missing_two_arguments(self):
+        """
+        Test when both arguments are missing, should raise TypeError.
+        """
+        # Test with missing two arguments
+        with self.assertRaises(TypeError):
+            matrix_divided()
