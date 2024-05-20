@@ -57,7 +57,7 @@ class TestMatrixDivided(unittest.TestCase):
         Test dividing matrix by float('inf') should return all values as 0.0.
         """
         # Test dividing matrix by float('inf')
-        result = matrix_divided([[1, 2], [3, 4]], float('inf'))
+        result = >>> matrix_divided([[1, 2], [3, 4]], float('inf'))
         self.assertEqual(result, [[0.0, 0.0], [0.0, 0.0]])
 
     def test_missing_one_argument(self):
