@@ -20,9 +20,10 @@ def matrix_divided(matrix, div):
         ZeroDivisionError: If div is equal to 0.
         TypeError: If each row of the matrix does not have the same size.
     """
-
+    if not isinstance(matrix, list):
+        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     for row in matrix:
-        if not isinstance(matrix, list) or not all(isinstance(row, list))
+        if not all(isinstance(row, list))
             raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     for row in matrix:
         for num in row:
