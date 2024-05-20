@@ -57,21 +57,24 @@ class TestMatrixDivided(unittest.TestCase):
         Test dividing matrix by float('inf') should return all values as 0.0.
         """
         # Test dividing matrix by float('inf')
-        result = >>> matrix_divided([[1, 2], [3, 4]], float('inf'))
-        self.assertEqual(result, [[0.0, 0.0], [0.0, 0.0]])
+        >>> matrix_divided([[1, 2], [3, 4]], float('inf'))
+        [[0.0, 0.0], [0.0, 0.0]]
 
     def test_missing_one_argument(self):
         """
         Test when one argument is missing, should raise TypeError.
         """
         # Test with missing one argument
-        with self.assertRaises(TypeError):
-            matrix_divided([[1, 2], [3, 4]])
+        >>> matrix_divided([[1, 2], [3, 4]])
+        Traceback (most recent call last):
+        TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
 
     def test_missing_two_arguments(self):
         """
         Test when both arguments are missing, should raise TypeError.
         """
         # Test with missing two arguments
-        with self.assertRaises(TypeError):
-            >>> matrix_divided()
+        >>> matrix_divided()
+        Traceback (most recent call last):
+        TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
