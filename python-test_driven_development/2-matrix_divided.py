@@ -3,6 +3,7 @@
 This module provides functions for dividing matrices.
 """
 
+
 def matrix_divided(matrix, div):
     """
     Divides all elements of a matrix by a given divisor.
@@ -20,6 +21,8 @@ def matrix_divided(matrix, div):
         ZeroDivisionError: If div is equal to 0.
         TypeError: If each row of the matrix does not have the same size.
     """
+
+    
     if not isinstance(matrix, list):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     for row in matrix:
