@@ -20,4 +20,5 @@ def text_indentation(text):
         formatted_text += char
         if char in ['.', '?', ':']:
             formatted_text += "\n\n"
-    print(formatted_text.strip())
+        print(formatted_text.strip())
+        formatted_text = ""
