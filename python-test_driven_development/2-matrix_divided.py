@@ -13,7 +13,6 @@ def MustBeAMatrix():
         "matrix must be a matrix (list of lists) of integers/floats".
     """
 
-
     raise TypeError("matrix must be a matrix (list of lists) "
                     "of integers/floats")
 
