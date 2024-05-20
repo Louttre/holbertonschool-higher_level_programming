@@ -12,6 +12,8 @@ Returns:
 Raises:
     TypeError: If either of a or b are not integers or floats.
 """
+
+
 def add_integer(a, b=98):
     """
     add two ints
@@ -21,4 +23,3 @@ def add_integer(a, b=98):
     if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
     return int(a) + int(b)
-
