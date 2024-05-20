@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-
+"""
+Print the text with 2 new lines after '.', '?', and ':'.
+"""    
 
 def text_indentation(text):
     """
-    Print the text with 2 new lines after each occurrence of '.', '?', and ':'.
+    Print the text with 2 new lines after '.', '?', and ':'.
 
     Args:
         text (str): The input text.
