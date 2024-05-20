@@ -1,22 +1,24 @@
->>>name = __import__('3-say_my_name').say_my_name
+>>> say_my_name = __import__('3-say_my_name').say_my_name
 
-regular entries:
->>>name("John", "Doe")
+# Regular entry
+>>> say_my_name("John", "Doe")
 My name is John Doe
 
-int passed to first_name:
->>>name(5, "Doe")
+# Int passed to first_name
+>>> say_my_name(5, "Doe")
 Traceback (most recent call last):
-first_name must be a string
+TypeError: first_name must be a string
 
-int passed to last_name:
->>>name("John", 5)
+# Int passed to last_name
+>>> say_my_name("John", 5)
 Traceback (most recent call last):
-first_name must be a string
+TypeError: last_name must be a string
 
-no arguments passed:
->>>name()
+# No arguments passed
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
-no arguments passed to last_name:
->>>name("John")
-John
+# No arguments passed to last_name
+>>> say_my_name("John")
+My name is John 
