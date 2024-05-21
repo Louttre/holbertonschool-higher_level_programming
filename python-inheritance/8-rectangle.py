@@ -7,7 +7,6 @@ class BaseGeometry:
 
     def area(self):
         """Placeholder method for calculating the area"""
-
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
@@ -21,7 +20,7 @@ class BaseGeometry:
             TypeError: If the value is not an integer.
             ValueError: If the value is less than or equal to 0.
         """
-        if type(value) is not (int):
+        if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
@@ -29,9 +28,7 @@ class BaseGeometry:
 
 class Rectangle(BaseGeometry):
     """
-    A class representing a rectangle, 
-    inheriting from BaseGeometry.
-    """
+    A class representing a rectangle, inheriting from BaseGeometry."""
 
     def __init__(self, width, height):
         """Initialize a new Rectangle instance.
