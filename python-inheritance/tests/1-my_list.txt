@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Test cases for MyList class.
-
+MyList = __import__('1-my_list').MyList
 >>> MyList().print_sorted()
 # Output: None
 
