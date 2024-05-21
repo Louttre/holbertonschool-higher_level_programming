@@ -18,6 +18,14 @@
 >>> my_list.print_sorted()
 [3, 3, 3]
 
+# Test no sorted append negative numbers
+>>> my_list = MyList()
+>>> my_list.append(-3)
+>>> my_list.append(-13)
+>>> my_list.append(-23)
+>>> my_list.print_sorted()
+[-23, -13, -3]
+
 # Test sorting with pre-existing list
 >>> my_list = MyList([4, 2, 6, 1, 3, 5])
 >>> my_list.print_sorted()
