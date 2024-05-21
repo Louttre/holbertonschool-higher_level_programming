@@ -7,7 +7,7 @@ MyList = __import__('1-my_list').MyList
 None
 
 # Test a list with one element
->>> MyList([42]).print_sorted()
+>>> MyList.print_sorted([42])
 [42]
 
 # Test a list with multiple elements
