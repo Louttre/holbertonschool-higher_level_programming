@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""
-Test cases for MyList class.
-from my_list import MyList
+"""Test cases for MyList class."""
+
+MyList = __import__('1-my_list').MyList
 
 >>> MyList().print_sorted()
-# Output: None
+None
 
 >>> MyList([42]).print_sorted()
-# Output: [42]
+[42]
 
 >>> MyList([8, 6, 7, 5, 3, 0, 9]).print_sorted()
-# Output: [0, 3, 5, 6, 7, 8, 9]
-"""
+[0, 3, 5, 6, 7, 8, 9]
+
