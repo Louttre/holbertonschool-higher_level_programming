@@ -27,8 +27,7 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    """
-    A class representing a rectangle, inheriting from BaseGeometry."""
+    """A class representing a rectangle, inheriting from BaseGeometry."""
 
     def __init__(self, width, height):
         """Initialize a new Rectangle instance.
@@ -68,8 +67,9 @@ class Square(Rectangle):
             ValueError: If width or height is less than or equal to 0.
         """
         self.integer_validator("size", size)
+        super().__init__(size, size)
         self.__size = size
 
     def area(self):
         """Method for calculating the area"""
-        return rectangle(self.__size, self.__size).area()
+        return self.__size * self.__size
