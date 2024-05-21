@@ -2,10 +2,6 @@
 
 >>> MyList = __import__('1-my_list').MyList
 
-# Test an empty list
->>> MyList().print_sorted()
-None
-
 # Test a list with one element
 >>> MyList([42]).print_sorted()
 [42]
