@@ -30,7 +30,7 @@ TypeError: print_sorted() missing 1 required positional argument: 'self'
 # Test __str__ method
 >>> my_list = MyList([1, 2, 3])
 >>> str(my_list)
-"MyList([1, 2, 3])"
+'[1, 2, 3]'
 
 # Test when input is None
 >>> MyList(None)
