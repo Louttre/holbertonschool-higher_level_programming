@@ -3,7 +3,8 @@
 MyList = __import__('1-my_list').MyList
 
 # Test an empty list
->>> MyList().print_sorted()
+>>> my_list = MyList()
+>>> my_list.print_sorted()
 None
 
 # Test a list with one element
