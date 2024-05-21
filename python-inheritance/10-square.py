@@ -57,7 +57,7 @@ class Rectangle(BaseGeometry):
 class Square(Rectangle):
 
     def __init__(self, size):
-                """Initialize a new Rectangle instance.
+        """Initialize a new Rectangle instance.
 
         Args:
             size (int): The size of the square.
@@ -71,4 +71,4 @@ class Square(Rectangle):
 
     def area(self):
         """Method for calculating the area"""
-        return self.__size * self.__size
+        return rectangle(self.__size, self.__size).area()
