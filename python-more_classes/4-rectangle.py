@@ -112,6 +112,5 @@ class Rectangle:
 
     def __repr__(self):
         """Return a string that can recreate the object using interpreter."""
-        
+
         return "Rectangle({}, {})".format(self.__width, self.__height)
-        
