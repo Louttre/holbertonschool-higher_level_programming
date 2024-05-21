@@ -94,7 +94,7 @@ class Rectangle:
     def print(self):
         """Print the rectangle using the '#' character."""
 
-        i = 0, j = 0
+        i, j = 0
         if self.__height == 0 or self.__width == 0:
             return ""
         for i in range(self.__height):
