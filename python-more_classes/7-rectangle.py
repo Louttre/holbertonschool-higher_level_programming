@@ -6,7 +6,7 @@ class Rectangle:
     """A class representing rectangle."""
 
     number_of_instances = 0
-    print_symbol = "#"
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle instance.
@@ -102,7 +102,7 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return ""
         for i in range(self.__height):
-            print("{}".format(Rectangle.print_symbol) * self.__width)
+            print(str(self.print_symbol) * self.__width)
 
     def __str__(self):
         """Return a string representation of the rectangle."""
