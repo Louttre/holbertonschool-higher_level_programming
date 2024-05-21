@@ -39,10 +39,9 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__width = value
 
-    @property
-    """Get the height of the rectangle"""
-    
+    @property    
     def height(self):
+        """Get the height of the rectangle"""
         return self.__height
 
     @height.setter
