@@ -55,7 +55,8 @@ class Rectangle(BaseGeometry):
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
 
 class Square(Rectangle):
-
+    """A class representing a square, inheriting from BaseGeometry."""
+    
     def __init__(self, size):
         """Initialize a new Rectangle instance.
 
