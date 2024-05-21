@@ -27,7 +27,10 @@ class BaseGeometry:
             raise ValueError("{} must be greater than 0".format(name))
 
 class Rectangle(BaseGeometry):
-    """A class representing a rectangle, inheriting from BaseGeometry."""
+    """
+    A class representing a rectangle, 
+    inheriting from BaseGeometry.
+    """
 
     def __init__(self, width, height):
         """Initialize a new Rectangle instance.
