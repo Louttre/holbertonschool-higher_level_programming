@@ -102,7 +102,7 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return ""
         for i in range(self.__height):
-            print(str(Rectangle.print_symbol) * self.__width)
+            print(Rectangle.print_symbol * self.__width)
 
     def __str__(self):
         """Return a string representation of the rectangle."""
@@ -111,7 +111,7 @@ class Rectangle:
             return ""
         rect_lines = []
         for _ in range(self.__height):
-            rect_lines.append('#' * self.__width)
+            rect_lines.append(Rectangle.print_symbol * self.__width)
         return "\n".join(rect_lines)
 
     def __repr__(self):
