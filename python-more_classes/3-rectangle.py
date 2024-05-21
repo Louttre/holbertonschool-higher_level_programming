@@ -100,5 +100,12 @@ class Rectangle:
         for i in range(self.__height):
             print('#' * self.__width)
 
-    def str(self):
-        self.print()
+    def __str__(self):
+        """Return a string representation of the rectangle using the '#' character."""
+
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        rect_lines = []
+        for _ in range(self.__height):
+            rect_lines.append('#' * self.__width)
+        return "\n".join(rect_lines)
