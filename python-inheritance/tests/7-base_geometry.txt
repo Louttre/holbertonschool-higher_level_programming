@@ -6,6 +6,9 @@
 # Valid input
 >>> bg.integer_validator("width", 10)
 
+# Test area
+>>> bg.area()
+[Exception] area() is not implemented
 
 # Test integer_validator method with non-integer input
 >>> bg.integer_validator("height", "ten")
