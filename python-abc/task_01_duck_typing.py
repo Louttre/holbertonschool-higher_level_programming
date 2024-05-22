@@ -15,7 +15,6 @@ class Shape(ABC):
     Abstract base class for shapes.
     """
 
-
     @abstractmethod
     def area(self):
         """
@@ -78,6 +77,7 @@ class Rectangle(Shape):
         Calculate the perimeter of the rectangle.
         """
         return (self.width + self.height) * 2
+
 
 def shape_info(shape):
     """
