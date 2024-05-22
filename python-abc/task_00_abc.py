@@ -7,14 +7,15 @@ from abc import ABC, abstractmethod
 """
 Importing ABC and abstractmethod from the abc module.
 ABC is the base class for defining Abstract Base Classes (ABCs).
-abstractmethod is a decorator indicating abstract 
+abstractmethod is a decorator indicating abstract
 methods that must be implemented by subclasses.
 """
+
 
 class Animal(ABC):
     """
     Define an abstract base class named 'Animal' that inherits from ABC.
-    Abstract base classes cannot be instantiated directly 
+    Abstract base classes cannot be instantiated directly
     and are used to define common interfaces for subclasses.
     """
 
@@ -26,16 +27,18 @@ class Animal(ABC):
         """
         pass
 
+
 class Cat(Animal):
     """
     Define a class 'Cat' that inherits from the 'Animal' abstract base class.
     """
-    
+
     def sound(self):
         """
         Implement the abstract method 'sound' for the 'Cat' class.
         """
         return "Meow"
+
 
 class Dog(Animal):
     """
