@@ -22,7 +22,8 @@ class Animal(ABC):
     @abstractmethod
     def sound(self):
         """
-        Define an abstract method 'sound' which must be implemented by any subclass of 'Animal'.
+        Define an abstract method 'sound' which must be implemented
+        by any subclass of 'Animal'.
         Abstract methods do not contain any implementation in the base class.
         """
         pass
@@ -44,7 +45,7 @@ class Dog(Animal):
     """
     Define a class 'Dog' that inherits from the 'Animal' abstract base class.
     """
-    
+
     def sound(self):
         """
         Implement the abstract method 'sound' for the 'Dog' class.
