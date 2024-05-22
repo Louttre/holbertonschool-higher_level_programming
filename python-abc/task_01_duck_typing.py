@@ -15,6 +15,7 @@ class Shape(ABC):
     Abstract base class for shapes.
     """
 
+
     @abstractmethod
     def area(self):
         """
@@ -28,6 +29,7 @@ class Shape(ABC):
         Abstract method to calculate the perimeter of the shape.
         """
         pass
+
 
 class Circle(Shape):
     """
@@ -51,6 +53,7 @@ class Circle(Shape):
         Calculate the perimeter (circumference) of the circle.
         """
         return self.radius * 2 * math.pi
+
 
 class Rectangle(Shape):
     """
