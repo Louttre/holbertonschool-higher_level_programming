@@ -35,7 +35,7 @@ class Cat(Animal):
         """
         Implement the abstract method 'sound' for the 'Cat' class.
         """
-        print("Meow")
+        return "Meow"
 
 class Dog(Animal):
     """
@@ -46,4 +46,4 @@ class Dog(Animal):
         """
         Implement the abstract method 'sound' for the 'Dog' class.
         """
-        print("Bark")
+        return "Bark"
