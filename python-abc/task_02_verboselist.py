@@ -4,7 +4,8 @@ class VerboseList(list):
 
     def append(self, value):
         super().append(value)
-        return "Added [{}] to the list.".format(value)
+        print("Added [{}] to the list.".format(value))
+        
 
     def extend(self, value):
         super().extend(value)
