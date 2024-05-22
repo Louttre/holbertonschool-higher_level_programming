@@ -9,7 +9,7 @@ class VerboseList(list):
 
     def extend(self, value):
         super().extend(value)
-        return "Extended the list with [{}] items.".format(value)
+        print("Extended the list with [{}] items.".format(value))
 
     def remove(self, value):
         print("Removed [{}] from the list.".format(value))
