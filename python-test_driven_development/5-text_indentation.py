@@ -22,4 +22,4 @@ def text_indentation(text):
             print("{}\n".format(formatted_text.strip()))
             formatted_text = ""
     if formatted_text:
-        print("{}".format(formatted_text.strip()ç)
+        print("{}".format(formatted_text.strip()))
