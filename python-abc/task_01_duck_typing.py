@@ -3,7 +3,7 @@
 This shebang line ensures the script runs with Python 3 interpreter.
 """
 
-from ABC import ABC, abstractmethod
+from abc import ABC, abstractmethod
 # Importing ABC and abstractmethod from the ABC module.
 
 import math
