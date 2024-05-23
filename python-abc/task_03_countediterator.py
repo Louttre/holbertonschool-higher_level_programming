@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+#!/usr/bin/env python3
+"""
+This shebang line ensures the script runs with Python 3 interpreter.
+"""
 
 
 class CountedIterator:
