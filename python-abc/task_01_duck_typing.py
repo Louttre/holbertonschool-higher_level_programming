@@ -39,7 +39,7 @@ class Circle(Shape):
         """
         Constructor for Circle class.
         """
-        self.radius = radius
+        self.radius = abs(radius)
 
     def area(self):
         """
