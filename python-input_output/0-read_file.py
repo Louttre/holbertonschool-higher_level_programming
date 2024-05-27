@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-file = open("UTF8", 'r')
-content = file.read()
-print(content)
-file.close()
+with open('UTF8', 'r') as file:
+    content = file.read()
+    print(content)
