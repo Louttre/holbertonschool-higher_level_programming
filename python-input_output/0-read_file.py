@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-file = open("my_file_0.txt", 'r')
+file = open("UTF8", 'r')
 content = file.read()
 print(content)
 file.close()
