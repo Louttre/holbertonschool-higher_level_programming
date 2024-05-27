@@ -19,5 +19,5 @@ def save_to_json_file(my_obj, filename):
     IOError: If there is an error writing to the file.
     """
 
-    with open(filename, 'w') as file:
+    with open(filename, 'w', encoding="utf-8") as file:
         json.dumps(my_obj, file)
