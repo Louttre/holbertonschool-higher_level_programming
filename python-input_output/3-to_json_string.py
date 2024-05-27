@@ -13,4 +13,4 @@ def to_json_string(my_obj):
     :return: A JSON string representing the object.
     """
 
-    print(json.dumps(my_obj))
+    return json.dumps(my_obj)
