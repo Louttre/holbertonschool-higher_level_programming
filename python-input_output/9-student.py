@@ -3,6 +3,7 @@
 Module
 """
 
+
 class Student:
     """
     A class that defines a student with first name, last name, and age.
