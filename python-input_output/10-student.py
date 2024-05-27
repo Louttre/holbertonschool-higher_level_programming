@@ -29,8 +29,8 @@ class Student:
         if attrs is None:
             return vars(self)
         else:
-            filtered_dict = {}
+            data = {}
             for attr in attrs:
                 if hasattr(self, attr):
-                    filtered_dict[attr] = getattr(self, attr)
-            return filtered_dict
+                    data[attr] = getattr(self, attr)
+            return data
