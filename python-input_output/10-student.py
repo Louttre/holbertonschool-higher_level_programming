@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Student class."""
 
+
 class Student:
     """
     Defines a student with first name, last name, and age.
@@ -9,7 +10,7 @@ class Student:
     def __init__(self, first_name, last_name, age):
         """
         Initializes a new Student instance.
-        
+
         :param first_name: The first name of the student.
         :param last_name: The last name of the student.
         :param age: The age of the student.
