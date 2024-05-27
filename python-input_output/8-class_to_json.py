@@ -16,5 +16,5 @@ def class_to_json(obj):
     serializable_attributes = {}
     for key, value in attributes.items():
         if isinstance(value, (list, dict, str, int, bool)):
-            serializable_attributes[key] = value 
+            serializable_attributes[key] = value
     return serializable_attributes
