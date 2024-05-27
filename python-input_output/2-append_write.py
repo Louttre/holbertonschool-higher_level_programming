@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """
-This module provides functionality to append text to an existing file. 
-If the file does not exist, it will create a new one and append the text to it.
-The module ensures that the file handling is done with UTF-8 encoding to support
+This module provides functionality
+to append text to an existing file. 
+If the file does not exist, it will create a 
+new one and append the text to it.
+The module ensures that the file handling is 
+done with UTF-8 encoding to support
 a wide range of text characters.
 """
 
@@ -13,7 +16,7 @@ def append_write(filename="", text=""):
 
     Opens the file in append mode,
     which allows text to be added to the end of the file
-    without truncating it. If the file does not exist, 
+    without truncating it. If the file does not exist,
     it creates a new file.
 
     Parameters:
