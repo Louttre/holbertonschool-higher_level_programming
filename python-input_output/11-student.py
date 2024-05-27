@@ -37,7 +37,8 @@ class Student:
 
     def reload_from_json(self, json):
         """
-        Replaces all attributes of the Student instance with those in the json dictionary.
+        Replaces all attributes of the Student
+        instance with those in the json dictionary.
 
         :param json: A dictionary containing new attribute values.
         """
