@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
 This module provides functionality
-to append text to an existing file. 
-If the file does not exist, it will create a 
+to append text to an existing file.
+If the file does not exist, it will create a
 new one and append the text to it.
-The module ensures that the file handling is 
+The module ensures that the file handling is
 done with UTF-8 encoding to support
 a wide range of text characters.
 """
