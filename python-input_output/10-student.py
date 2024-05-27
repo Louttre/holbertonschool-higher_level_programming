@@ -6,7 +6,7 @@ class Student:
     """
     Defines a student with first name, last name, and age.
     """
-    
+
     def __init__(self, first_name, last_name, age):
         """
         Initializes a new Student instance.
