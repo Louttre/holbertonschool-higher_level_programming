@@ -21,5 +21,5 @@ try:
     data = load_from_json_file("add_item.json")
 except FileNotFoundError:
     data = []
-data.append(sys.argv[1:])
+data += sys.argv[1:]
 save_to_json_file(data, "add_item.json")
