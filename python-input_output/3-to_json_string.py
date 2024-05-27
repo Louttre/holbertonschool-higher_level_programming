@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 import json
 """
 Returns the JSON representation of an object.
