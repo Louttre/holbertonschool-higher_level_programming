@@ -17,7 +17,7 @@ def load_from_json_file(filename):
 
 try:
     data = load_from_json_file("add_item.json")
-except FileNotFoundError:
+except ValueError:
     data = []
 data.extend(sys.argv[1:])
 save_to_json_file(data, "add_item.json")
