@@ -35,8 +35,7 @@ class CustomObject:
             str: A formatted string displaying
             the name, age, and student status.
         """
-        return "Name: {}\nAge: {}\nIs Studen\
-        t: {}".format(self.name, self.age, self.is_student)
+        return f"Name: {self.name}\nAge: {self.age}\nIs Student: {self.is_student}"
 
     def serialize(self, filename):
         """
