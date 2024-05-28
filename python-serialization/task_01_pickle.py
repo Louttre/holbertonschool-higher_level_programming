@@ -75,3 +75,9 @@ class CustomObject:
             return loadata
         except (pickle.UnpicklingError, EOFError, Exception):
             return None
+
+        def display(self):
+        """
+        Displays the object's attributes in a formatted way.
+        """
+        print(self.__str__())
