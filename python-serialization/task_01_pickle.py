@@ -77,7 +77,7 @@ class CustomObject:
             return None
 
     def display(self):
-    """
-    Displays the object's attributes in a formatted way.
-    """
-    print(self.__str__())
+        """
+        Displays the object's attributes in a formatted way.
+        """
+        print(self.__str__())
