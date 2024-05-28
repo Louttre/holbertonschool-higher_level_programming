@@ -19,12 +19,13 @@ def convert_csv_to_json(filename):
     try:
         with open(filename, 'r') as file:
             csv_reader = csv.DictReader(file)
-        newdict = []
+        data = []
         for row in csv_reader:
             rows = [row]
-            newdict.append(rows)
+            data.append(rows)
+        json_data = json.dumps(data)
         with open('json.data', 'w') as json_file:
-            json.dumps(newdict, json_file)
+            json_file.write(json_data)
         return True
     except (FileNotFoundError, Exception):
         return False
