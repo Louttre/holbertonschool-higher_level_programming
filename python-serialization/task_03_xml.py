@@ -9,4 +9,4 @@ def serialize_to_xml(dictionary, filename):
         child = ET.SubElement(root, key)
         child.text = str(value)
     tree = ET.ElementTree(root)
-    tree.write(file)
+    tree.write(filename)
