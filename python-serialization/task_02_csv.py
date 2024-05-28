@@ -24,6 +24,7 @@ def convert_csv_to_json(filename):
             data.append(row)
         json_data = json.dumps(data)
         with open('data.json', 'w') as json_file:
+            print("e")
             json_file.write(json_data)
         return True
     except (FileNotFoundError, Exception):
