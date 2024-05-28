@@ -22,7 +22,7 @@ def pascal_triangle(n):
     for i in range(1, n + 1):
         row = [1]
         for j in range(1, i):
-            row.append(basecase[i - 1][i - 1] + basecase[i - 1][j])
+            row.append(basecase[i - 1][j - 1] + basecase[i - 1][j])
         row.append(1)
         basecase.append(row)
     return basecase
