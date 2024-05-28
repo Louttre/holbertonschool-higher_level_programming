@@ -68,9 +68,8 @@ class CustomObject:
             instance, or None if deserialization fails.
         """
         try:
-            loadata = CustomObject()
             with open(filename, "rb") as file:
-                loadata = pickle.load(filename)
+                loadata = pickle.load(file)
             return loadata
         except (pickle.UnpicklingError, EOFError, Exception):
             return None
