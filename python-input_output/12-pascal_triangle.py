@@ -25,4 +25,4 @@ def pascal_triangle(n):
             row.append(basecase[i - 1][i - 1] + basecase[i - 1][j])
         row.append(1)
         basecase.append(row)
-    return reseult
+    return basecase
