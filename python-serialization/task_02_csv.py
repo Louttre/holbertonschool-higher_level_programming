@@ -20,7 +20,7 @@ def convert_csv_to_json(filename):
         with open(filename, 'r') as file:
             csv_reader = csv.DictReader(file)
         data = []
-        for row in csv_reader:
+        for row in csv_reader:      
             data.append(row)
         json_data = json.dumps(data)
         with open('data.json', 'w') as json_file:
