@@ -23,9 +23,8 @@ def convert_csv_to_json(filename):
         for row in csv_reader:
             rows = [row]
             newdict.append(rows)
-        json_csv = json.dumps(newdict)
         with open('json.data', 'w') as json_file:
-            json_file.write(json_csv)
+            json.dumps(newdict, json_file)
         return True
     except (FileNotFoundError, Exception):
         return False
