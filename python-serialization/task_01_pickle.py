@@ -15,7 +15,8 @@ class CustomObject:
     """
     def __init__(self, name, age, is_student):
         """
-        Initializes the CustomObject with the given name, age, and student status.
+        Initializes the CustomObject with
+        the given name, age, and student status.
 
         Args:
             name (str): The name of the person.
@@ -33,14 +34,16 @@ class CustomObject:
         Returns:
             str: A formatted string displaying the name, age, and student status.
         """
-        return "Name: {}\nAge: {}\nIs Student: {}".format(self.name, self.age, self.is_student)
+        return "Name: {}\nAge: {}\nIs Studen\
+        t: {}".format(self.name, self.age, self.is_student)
 
     def serialize(self, filename):
         """
         Serializes the CustomObject instance to a file using pickle.
 
         Args:
-            filename (str): The name of the file to which the object will be serialized.
+            filename (str): The name of the file
+            to which the object will be serialized.
 
         Returns:
             bool: True if serialization is successful, None otherwise.
@@ -57,10 +60,12 @@ class CustomObject:
         Deserializes a CustomObject instance from a file using pickle.
 
         Args:
-            filename (str): The name of the file from which the object will be deserialized.
+            filename (str): The name of the file
+            from which the object will be deserialized.
 
         Returns:
-            CustomObject: The deserialized CustomObject instance, or None if deserialization fails.
+            CustomObject: The deserialized CustomObject
+            instance, or None if deserialization fails.
         """
         try:
             loadata = CustomObject()
