@@ -32,7 +32,8 @@ class CustomObject:
         Returns a string representation of the CustomObject.
 
         Returns:
-            str: A formatted string displaying the name, age, and student status.
+            str: A formatted string displaying
+            the name, age, and student status.
         """
         return "Name: {}\nAge: {}\nIs Studen\
         t: {}".format(self.name, self.age, self.is_student)
