@@ -7,10 +7,8 @@ module
 def pascal_triangle(n):
     """
     Generates Pascal's Triangle up to the n-th row.
-    
     Args:
         n (int): The number of rows of Pascal's Triangle to generate.
-    
     Returns:
         list of list of int: A list of lists where each sublist represents a row in Pascal's Triangle.
     """
