@@ -35,6 +35,7 @@ def add_user():
     username = data.get("username")
     if username and username not in users:
         users[username] = {
+            "username": data.get("username"),
             "name": data.get("name"),
             "age": data.get("age"),
             "city": data.get("city")
