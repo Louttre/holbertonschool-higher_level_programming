@@ -14,8 +14,6 @@ def fetch_and_print_posts():
         
         for post in posts:
             print(post['title'])
-    else:
-        print("Failed to fetch posts")
 
 def fetch_and_save_posts():
     url = "https://jsonplaceholder.typicode.com/posts"
