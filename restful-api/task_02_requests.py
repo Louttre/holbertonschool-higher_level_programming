@@ -25,12 +25,10 @@ def fetch_and_save_posts():
         posts = response.json()
 
         structured_data = [{'id': post['id'], 'title': post['title'],
-                            'body': post['body']} for post in posts]
+                            'body': post['body']}]
 
         with open('posts.csv', 'w', newline='') as csvfile:
-            fieldnames = ['userId', 'id', 'title', 'body']
+            fieldnames = ['id', 'title', 'body']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
             writer.writeheader()
-            for post in structured_data:
-                writer.writerow(post)
+            writer.writerow(post)
