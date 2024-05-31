@@ -6,7 +6,6 @@ import json
 
 
 users = {}
-
 app = Flask(__name__)
 
 
