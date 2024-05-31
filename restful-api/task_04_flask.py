@@ -42,3 +42,6 @@ def add_user():
         return jsonify({"message": "User added", "user": users[username]}), 201
     else:
         return 400
+
+if __name__ == "__main__":
+    app.run()
