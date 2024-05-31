@@ -22,7 +22,7 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
                 "age": 30,
                 "city": "New York"
             }
-            self.wfile.write(json.dumps(response).encode())
+            self.wfile.write(json.dumps(response).encode('utf-8'))
         elif self.path == '/status':
             self.send_response(200)
             self.send_header('Content-type', 'text/plain')
@@ -36,12 +36,12 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
                 "version": "1.0",
                 "description": "A simple API built with http.server"
             }
-            self.wfile.write(json.dumps(response).encode())
+            self.wfile.write(json.dumps(response).encode('utf-8'))
         else:
             self.send_response(404)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            self.wfile.write(b"Endpoint not found")
+            self.wfile.write(b"404 not found")
 
 PORT = 8000
 
