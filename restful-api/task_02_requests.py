@@ -24,7 +24,7 @@ def fetch_and_save_posts():
     if response.status_code == 200:
         posts = response.json()
 
-        structured_data = [{'id': post['id'], 'title': post['title'], 
+        structured_data = [{'id': post['id'], 'title': post['title'],
                             'body': post['body']} for post in posts]
 
         with open('posts.csv', 'w', newline='') as csvfile:
