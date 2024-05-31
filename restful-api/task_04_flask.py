@@ -41,4 +41,4 @@ def add_user():
         }
         return jsonify({"message": "User added", "user": users[username]}), 201
     else:
-        return jsonify({"error": "Invalid data or user already exists"}), 400
+        return 400
