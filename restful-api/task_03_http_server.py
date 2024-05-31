@@ -43,8 +43,8 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(b"404 Not Found")
 
-PORT = 8000
-
-with socketserver.TCPServer(("", PORT), HTTPRequestHandler) as httpd:
-    print(f"Serving on port {PORT}")
+if __name__ == '__main__':
+    server_address = ('', 8000)
+    httpd = http.server.HTTPServer(server_address, SimpleHTTPRequestHandler)
+    print('Starting server on http://localhost:8000')
     httpd.serve_forever()
