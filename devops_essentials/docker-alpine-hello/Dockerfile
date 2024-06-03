@@ -1,3 +1,3 @@
 FROM alpine:3.14
 RUN apk add --no-cache mysql-client
-ENTRYPOINT ["echo"]
+CMD echo "Hello, World!"
