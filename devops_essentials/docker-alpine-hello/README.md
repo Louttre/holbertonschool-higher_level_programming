@@ -1,1 +1,0 @@
-# Containerization and Orchestration Essentials
