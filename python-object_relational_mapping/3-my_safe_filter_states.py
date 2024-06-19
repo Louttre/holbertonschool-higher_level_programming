@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """takes in an argument and displays all values in the states table
 but injection safe"""
