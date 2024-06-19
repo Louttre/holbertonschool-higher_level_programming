@@ -1,12 +1,11 @@
+#!/usr/bin/python3
 """
 Import the MySQLdb and sys module
 """
 import MySQLdb
 import sys
 
-"""
-test
-"""
+
 if __name__ == "__main__":
     db = MySQLdb.connect(
         host="localhost",
