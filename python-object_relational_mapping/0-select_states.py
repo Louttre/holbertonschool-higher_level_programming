@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Import the MySQLdb and sys module
 """
@@ -14,8 +15,7 @@ if __name__ == "__main__":
     )
     cursor = db.cursor()
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
-    query_rows = cur.fetchall()
+    query_rows = cursor.fetchall()
     for row in query_rows:
         print(row)
-    cur.close()
-    conn.close()
+    cursor.close()
