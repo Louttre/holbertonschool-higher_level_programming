@@ -14,10 +14,9 @@ if __name__ == "__main__":
         db=sys.argv[3]
     )
     cursor = db.cursor()
-    query = ("SELECT * FROM states WHERE name"
+    cursor.execute("SELECT * FROM states WHERE name"
              " LIKE BINARY %s ORDER "
-             "BY id ASC;")
-    cursor.execute(query, (sys.argv[4],))
+             "BY id ASC;", (sys.argv[4],))
     query_rows = cursor.fetchall()
     for row in query_rows:
         print(row)
