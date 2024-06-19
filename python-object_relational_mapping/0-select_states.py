@@ -1,5 +1,9 @@
+"""
+Import the MySQLdb and sys module
+"""
 import MySQLdb
 import sys
+
 
 if __name__ == "__main__":
     db=MySQLdb.connect(username=sys.argv[1}, password=sys.argv[2],
