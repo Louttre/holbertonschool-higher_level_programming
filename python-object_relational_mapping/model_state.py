@@ -5,6 +5,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 
+Base = declarative_base()
+
 class State(Base):
         """state class"""
     __tablename__ = 'states'
