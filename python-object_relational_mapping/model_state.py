@@ -16,5 +16,5 @@ class State(Base):
                 autoincrement=True,
                 nullable=False,
                 unique=True
-        )
+    )
     name = Column(String(128), nullable=False)
