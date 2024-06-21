@@ -2,6 +2,7 @@
 """module"""
 
 from model_state import Base, State
+from model_city import City
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
 import sys
@@ -17,7 +18,11 @@ if __name__ == "__main__":
     )
     Session = sessionmaker(bind=engine)
     session = Session()
-    cities = session.query(State, City).join(State).filter(City.state_id == State.id).all
-    for city in cities:
+    cities = (
+            session.query(City, State)
+            .join(State, City.state_id == State.id)
+            .order_by(City.id)
+    )
+    for city, state in cities:
         print(f"{state.name}: ({city.id}) {city.name}")
     session.close()
