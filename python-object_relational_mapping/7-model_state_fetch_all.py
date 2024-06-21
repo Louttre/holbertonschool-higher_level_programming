@@ -13,7 +13,7 @@ l3 = sys.argv[3]
 engine = create_engine(
     f'mysql+mysqldb://{l1}:{l2}@localhost:3306/{l3}',
     pool_pre_ping=True
-)
+    )
 Session = sessionmaker(bind=engine)
 session = Session()
 states = session.query(State).order_by(State.id.asc()).all()
