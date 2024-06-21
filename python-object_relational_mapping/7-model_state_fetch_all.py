@@ -8,7 +8,7 @@ import sys
 
 
 if __name__ == "__main__":
-    
+
     l1 = sys.argv[1]
     l2 = sys.argv[2]
     l3 = sys.argv[3]
@@ -22,5 +22,3 @@ if __name__ == "__main__":
     for state in states:
         print(f"{state.id}: {state.name}")
     session.close()
-
-
