@@ -22,5 +22,5 @@ if __name__ == "__main__":
       State.name.like('%a%')
     ).order_by(State.id.asc()).all()
     for state in states:
-      print("{}: {}".format(state.id, state.name))
+        print("{}: {}".format(state.id, state.name))
     session.close()
