@@ -21,9 +21,8 @@ if __name__ == "__main__":
     states = session.query(State).filter(
       State.name.like(sys.argv[4])
     ).order_by(State.id.asc()).all()
-    for state in states:
-        if state:
-            print("{}".format(state.id))
-        else:
-            print("Not found")
+    if state:
+        print("{}".format(state.id))
+    else:
+        print("Not found")
     session.close()
