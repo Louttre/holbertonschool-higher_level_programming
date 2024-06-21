@@ -9,8 +9,11 @@ import sys
 if __name__ == "__main__":
     main()
 
+    l1 = sys.argv[1]
+    l2 = sys.argv[2]
+    l3 = sys.argv[3]
     engine = create_engine(
-        f'mysql+mysqldb://{sys.argv[1]}:{sys.argv[2]}@localhost:3306/{sys.argv[3]}',
+        f'mysql+mysqldb://{l1}:{l2}@localhost:3306/{l3}',
         pool_pre_ping=True
     )
     Session = sessionmaker(bind=engine)
