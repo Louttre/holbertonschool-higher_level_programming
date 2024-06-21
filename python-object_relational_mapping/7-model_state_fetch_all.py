@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 import sys
 
 engine = create_engine(
-    f'mysql+mysqldb://{username}:{password}@localhost:3306/{database}',
+    f'mysql+mysqldb://{sys.argv[1]}:{sys.argv[2]}@localhost:3306/{sys.argv[3]}',
     pool_pre_ping=True
 )
 Session = sessionmaker(bind=engine)
