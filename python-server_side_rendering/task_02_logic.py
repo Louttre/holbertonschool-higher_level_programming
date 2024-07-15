@@ -14,7 +14,7 @@ def about():
 def contact():
     return render_template('contact.html')
 
-@app.route('/item')
+@app.route('/items')
 def item_list():
   
     with open('items.json', 'r') as file:
