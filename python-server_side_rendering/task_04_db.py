@@ -36,25 +36,23 @@ def display_products():
     product_id = request.args.get('id')
     products = []
 
-    if source == 'json':
-        data = read_json_file('products.json')
-    elif source == 'csv':
-        data = read_csv_file('products.csv')
-    elif source == 'sql':
-        data = read_sql_data()
-        if data is None:
-            return render_template('product_display.html', error="Database error")
-    else:
-        return render_template('product_display.html', error="Wrong source")
-
-    if product_id:
-        try:
+    try:
+        if source == 'json':
+            products = read_json_file('products.json')
+        elif source == 'csv':
+            products = read_csv_file('products.csv')
+        elif source == 'sql':
+            products = read_sqlite_db()
+        else:
+            return render_template('product_display.html', error="Wrong source")
+        
+        if product_id:
             product_id = int(product_id)
-            data = [product for product in data if product['id'] == product_id]
-            if not data:
+            products = [product for product in products if product['id'] == product_id]
+            if not products:
                 return render_template('product_display.html', error="Product not found")
-        except ValueError:
-            return render_template('product_display.html', error="Invalid product id")
+    except Exception as e:
+        return render_template('product_display.html', error=str(e))
 
     return render_template('product_display.html', products=products)
 
