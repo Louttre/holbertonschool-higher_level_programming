@@ -24,7 +24,6 @@ def display_products():
     product_id = request.args.get('id')
     products = []
 
-    # Read data based on source
     if source == 'json':
         products = read_json_file('products.json')
     elif source == 'csv':
@@ -32,7 +31,6 @@ def display_products():
     else:
         return render_template('product_display.html', error="Wrong source")
 
-    # Filter by product_id if provided
     if product_id:
         product_id = int(product_id)
         products = [product for product in products if product['id'] == product_id]
