@@ -16,7 +16,6 @@ def contact():
 
 @app.route('/items')
 def items():
-  
     with open('items.json', 'r') as file:
         data = json.load(file)  
     items = data.get('items', [])
